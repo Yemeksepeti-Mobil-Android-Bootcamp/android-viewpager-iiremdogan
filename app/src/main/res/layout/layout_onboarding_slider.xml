@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sliderMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTintMode="src_over"
+            android:background="@color/color_blue">
+            <ImageView
+                android:id="@+id/imageViewOnboardingIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/exceptional"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toTopOf="@id/textViewOnboarding"
+                tools:src="@drawable/ic_chart"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/textViewOnboarding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/text_view_onboarding"
+                android:gravity="center_horizontal|top"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="70dp"
+                tools:text="Say goodbye to paper receipts"
+                />
+            <LinearLayout
+                android:id="@+id/linear_layout_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/buttonGetStarted"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent">
+                <ImageView
+                    android:id="@+id/indicator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_unselected_indicator"
+                    android:layout_marginEnd="6dp"
+                    />
+                <ImageView
+                    android:id="@+id/indicator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_unselected_indicator"
+                    android:layout_marginEnd="6dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/indicator3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/shape_unselected_indicator" />
+            </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonGetStarted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:text="@string/get_started"
+                    android:background="@drawable/background_borderless_rounded_button"
+                    style="@style/style_button_solid"
+                    app:layout_constraintBottom_toTopOf="@id/buttonLogin"
+                    android:layout_marginBottom="16dp"
+                    android:textAllCaps="false" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:background="@drawable/background_border_rounded_button"
+                    style="@style/style_button_borderless"
+                    android:layout_marginHorizontal="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="40dp"
+                    android:textAllCaps="false" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BootcampHomework1</string>
+    <string name="no_more_paper_receipt">No more paper receipt!</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="get_started">Get Started</string>
+    <string name="text_onboarding_first_page_info">Say goodbye to paper receipts</string>
+    <string name="text_onboarding_second_page_info">Monitor your daily spending</string>
+    <string name="text_onboarding_third_page_info">Easily access your receipts anywhere</string>
+</resources>
